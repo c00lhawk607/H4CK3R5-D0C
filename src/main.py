@@ -28,6 +28,8 @@ while True:
 
 	choice = input(Fore.GREEN + "Choice: ")
 
+	os.system("ls -p | grep -v /")
+
 	nex = "What is the name of the document?\n"
 
 	i = 0
