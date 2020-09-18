@@ -1,9 +1,12 @@
-import os, time
+import os, time, pickle
+
+
 try:
 	from clearing import clear
 except:
 	os.system("pip3 install clearing")
 	from clearing import clear
+
 
 try:
 	from colorama import *
@@ -46,5 +49,25 @@ while True:
 	print("To go into instert mode press i. To quit without saving, if in insert mode press esc, then press :q and hit enter. To save the doc press esc if in insert mode then press :wq and enter.")
 	Style.RESET_ALL
 	time.sleep(2.5)
+	try:
+		f = open(name, "rb")
+		contents = pickle.load(f)
+		f.close()
+		f = open(name, "w")
+		f.write(contents)
+		f.close()
+	except:
+		pass
 	os.system("vim "+name)
+	f = open(name, "r")
+	contents = f.read()
+	f.close()
+
+	try:
+		f = open(name, "wb")
+		pickle.dump(contents, f)
+		f.close()
+	except:
+		pass
+
 	clear()
