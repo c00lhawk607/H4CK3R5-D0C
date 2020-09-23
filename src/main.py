@@ -4,7 +4,8 @@ import os, time, pickle
 try:
 	from clearing import clear
 except:
-	os.system("pip3 install clearing")
+	os.system("pip install --upgrade pip")
+	os.system("pip install clearing")
 	from clearing import clear
 
 
@@ -12,9 +13,11 @@ try:
 	from colorama import *
 	init()
 except:
-	os.system("pip3 install colorama")
+	os.system("pip install --upgrade pip")
+	os.system("pip install colorama")
 	from colorama import *
 	init()
+	
 while True:
 	start = """H3LL0, W3LC0M3 T0 H4CK3R5 D0C!
 1) Create a new Doc
