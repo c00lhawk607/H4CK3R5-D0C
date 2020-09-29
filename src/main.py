@@ -54,6 +54,14 @@ while True:
 	else:
 		pass
 
+	if ".html" in name:
+		bash("firefox "+ name)
+	else:
+		pass
+	time.sleep(1.0)
+	
+
+
 	f = open(name, "r")
 	contents = f.read()
 	contents = contents.encode("utf8")
