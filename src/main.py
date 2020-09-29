@@ -33,6 +33,7 @@ while True:
 	printG("To go into instert mode press i. To quit without saving, if in insert mode press esc, then press :q and hit enter. To save the doc press esc if in insert mode then press :wq and enter.")
 	Style.RESET_ALL
 	time.sleep(2.5)
+	clear()
 	
 	try:
 		f = open(name, "rb")
@@ -46,6 +47,13 @@ while True:
 	except:
 		pass
 	bash("vim "+name)
+
+	if ".py" in name:
+		bash("python3 "+ name)
+		time.sleep(2.5)
+	else:
+		pass
+
 	f = open(name, "r")
 	contents = f.read()
 	contents = contents.encode("utf8")
