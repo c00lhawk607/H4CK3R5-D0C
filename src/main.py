@@ -50,7 +50,6 @@ while True:
 
 	if ".py" in name:
 		bash("python3 "+ name)
-		time.sleep(2.5)
 	else:
 		pass
 
@@ -58,6 +57,12 @@ while True:
 		bash("firefox "+ name)
 	else:
 		pass
+	
+	if ".sh" in name:
+		bash(name)
+	else:
+		pass
+	
 	time.sleep(1.0)
 	
 
