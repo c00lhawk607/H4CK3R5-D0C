@@ -59,7 +59,7 @@ while True:
 		pass
 	
 	if ".sh" in name:
-		bash(name)
+		bash("bash "+ name)
 	else:
 		pass
 	
