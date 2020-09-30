@@ -1,4 +1,22 @@
-from function import *
+#Functions for H4CK3R'5 D0C#
+import os, time, pickle, base64
+
+def bash(cmd):
+	"""Executes command in seperate bash terminal."""
+	os.system(cmd)
+
+from colorama import *
+init()
+
+from clearing import clear
+
+
+def printG(message):
+	print(Fore.GREEN + message,sep="", end="",flush= True)
+
+def inputG(message):
+	input(Fore.GREEN + message)
+	###############################################
 	
 
 while True:
