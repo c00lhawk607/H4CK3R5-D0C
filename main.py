@@ -5,10 +5,23 @@ def bash(cmd):
 	"""Executes command in seperate bash terminal."""
 	os.system(cmd)
 
-from colorama import *
-init()
+try:
+	from colorama import *
+	init()
+except:
+	class Fore:
+		GREEN = ""
+	class Style:
+		RESET_ALL = ""
 
-from clearing import clear
+try:
+	from clearing import clear
+except:
+	def clear():
+		if os.name == "nt":
+			os.system("cls")
+		else:
+			os.system("clear")
 
 
 def printG(message):
@@ -40,7 +53,7 @@ while True:
 	clear()
 
 	if os.name == "nt":
-		bash("cd")
+		bash("dir")
 	else:
 		bash("ls -p -a | grep -v /")
 
