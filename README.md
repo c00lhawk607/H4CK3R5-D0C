@@ -1,6 +1,6 @@
 # H4CKER5 D0C
 ## What is it?
-A doc that even lints the file you are working on! This uses the vim command already on Linux.
+A doc that even lints the file you are working on! This uses the vim command already on Linux. H4CK3R5 D0C also encodes your file after you finish with base64 and pickle.
 ## How's it work?
 It uses the command vim to view and edit a file that exists or does not.
 
