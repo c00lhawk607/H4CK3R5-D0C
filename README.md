@@ -5,7 +5,7 @@ A doc that even lints the file you are working on! This uses the vim command alr
 It uses the command vim to view and edit a file that exists or does not.
 
 ## Currently supported os?
-MacOS and Linux. Sorry windows.
+MacOS, Linux, and Windows*!
 
 ## Help! I can't exit a file!!!
 calm down. Press esc if you are in insert mode, then press :wq and hit enter. This will save your file and exit. press :q and hit enter if you do not want to save the file.
@@ -16,3 +16,6 @@ calm down. Press esc if you are in insert mode, then press :wq and hit enter. Th
 - [x] I plan on encoding files in base64 and/or saving into a .dat file with pickle.
 - [ ] Making a way to share docs.
 - And more...
+
+
+###### *\*Windows is supported through use of vim for windows. A file has been provided for install in the windows folder and I do not take any credit for vim nor will I ever.*
